@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Little Snoop' target in the 'Little Snoop' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
