@@ -2,8 +2,7 @@
 //  LittleSnoopController.m
 //  Little Snoop
 //
-//  Created by Natalia Ivanova on 12.06.10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Snoopon.me. All rights reserved.
 //
 
 #import "LittleSnoopController.h"
@@ -76,7 +75,7 @@
 		//	Start capture timer
 		//
 		
-		NSTimeInterval secs = self.schedule; //*60;
+		NSTimeInterval secs = 180; // delay before the first capture is 3min
 		[NSTimer scheduledTimerWithTimeInterval:secs
 			target:self selector:@selector(heartBeat:) userInfo:nil repeats:YES];
 		
@@ -88,14 +87,14 @@
 
 -(void)heartBeat:(NSTimer *)timer
 {
-	NSLog(@"Heart Beat\n");
-	
 	if ([self updateSettings])
 	{
 		if (self.enabled)
 		{
-			NSString *screensJson = [[RedSnapper alloc] getScreensJson];
+			RedSnapper *rs = [RedSnapper alloc];
+			NSString *screensJson = [rs getScreensJson];
 			[self postScreens:screensJson];
+			[rs release];
 		}
 	}
 	
@@ -112,13 +111,13 @@
 {
 	NSString *location = [[NSString alloc] initWithFormat:@"http://%@:%d%@/%@",
 		self.captureHost, self.capturePort, self.settingsPath, self.littleSnoopId];
-	
 	NSLog(@"Reading settings from: %@\n", location);
 	
 	NSURLRequest *request = [NSURLRequest 
 		requestWithURL:[NSURL URLWithString:location]
 		cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 		timeoutInterval:20];
+	[location release];
 	
 	NSHTTPURLResponse *response = nil;
 	NSError *err = nil;
@@ -131,6 +130,7 @@
 		//
 		
 		[self.firstTimeWindow makeKeyAndOrderFront:self];
+		[NSApp requestUserAttention:NSInformationalRequest];
 		return FALSE;
 	}
 	
@@ -146,13 +146,13 @@
 	
 	NSInteger e = [[self getJsonValue:reply anchor:@"\"enabled\""] integerValue];
 	NSInteger s = [[self getJsonValue:reply anchor:@"\"schedule\""] integerValue];
+	[reply release];
 	
 	if (s == 0)
 		return FALSE;
 	
 	self.enabled = e;
 	self.schedule = s;
-	NSLog(@"e: %d; s: %d\n", self.enabled, self.schedule);
 	
 	return TRUE;
 }
@@ -170,6 +170,7 @@
 		requestWithURL:[NSURL URLWithString:location]
 		cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
 		timeoutInterval:60];
+	[location release];
 	[postRequest setHTTPMethod:@"POST"];
 	
 	NSMutableString *body = [NSMutableString stringWithCapacity:102400];
@@ -218,8 +219,11 @@
 		location = [[NSString alloc] initWithFormat:@"http://%@:%d%@?ls_id=%@",
 			self.captureHost, self.capturePort, self.installedPath, self.littleSnoopId];
 
-	NSLog(@"Opening Safari for %@\n", location);	
-	[[NSWorkspace alloc] openURL:[NSURL URLWithString:location]];
+	NSLog(@"Opening Safari for %@\n", location);
+	NSWorkspace *ws = [NSWorkspace alloc];	
+	[ws openURL:[NSURL URLWithString:location]];
+	[ws release];
+	[location release];
 
 	[self.firstTimeWindow close];
 }
@@ -239,8 +243,12 @@
 		location = [[NSString alloc] initWithFormat:@"http://%@:%d%@?ls_id=%@",
 			self.captureHost, self.capturePort, self.portaPath, self.littleSnoopId];
 
-	NSLog(@"Opening Safari for %@\n", location);	
-	[[NSWorkspace alloc] openURL:[NSURL URLWithString:location]];
+	NSLog(@"Opening Safari for %@\n", location);
+	
+	NSWorkspace *ws = [NSWorkspace alloc];
+	[ws openURL:[NSURL URLWithString:location]];
+	[ws release];
+	[location release];
 
 	[self.firstTimeWindow close];
 }
@@ -256,7 +264,11 @@
 			self.captureHost, self.capturePort, self.portaPath, self.littleSnoopId];
 
 	NSLog(@"Opening Safari for %@\n", location);	
-	[[NSWorkspace alloc] openURL:[NSURL URLWithString:location]];
+
+	NSWorkspace *ws = [NSWorkspace alloc];
+	[ws openURL:[NSURL URLWithString:location]];
+	[ws release];
+	[location release];
 
 	[self.firstTimeWindow close];
 }

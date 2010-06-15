@@ -1,9 +1,8 @@
 //
 //  Base64.h
-//  LS2
+//  Little Snoop
 //
-//  Created by Natalia Ivanova on 12.06.10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Snoopon.me. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

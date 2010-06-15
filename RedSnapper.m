@@ -2,8 +2,7 @@
 //  RedSnapper.m
 //  Little Snoop
 //
-//  Created by Natalia Ivanova on 13.06.10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Snoopon.me. All rights reserved.
 //
 
 #import "RedSnapper.h"
@@ -89,7 +88,9 @@
 	[midImage unlockFocus];
 	
 	NSBitmapImageRep *midRep = [[NSBitmapImageRep alloc] initWithData:[midImage TIFFRepresentation]];
+	[midImage release];
 	NSData *midPngData = [midRep representationUsingType:NSPNGFileType properties:nil];
+	[midRep release];
 	//[midPngData writeToFile:@"midPngData1.png" atomically:YES];
 
 	// Create thumbnail image...
@@ -105,8 +106,12 @@
 	[thumbImage unlockFocus];
 	
 	NSBitmapImageRep *thumbRep = [[NSBitmapImageRep alloc] initWithData:[thumbImage TIFFRepresentation]];
+	[thumbImage release];
 	NSData *thumbPngData = [thumbRep representationUsingType:NSPNGFileType properties:nil];
+	[thumbRep release];
 	//[thumbPngData writeToFile:@"thumbPngData1.png" atomically:YES];
+	
+	[image release];
 	
 	NSMutableString *jsonObj = [NSMutableString stringWithCapacity:40960];
 	[jsonObj appendFormat:@"{\"orig_width\":%d,\"orig_height\":%d,"

@@ -11,18 +11,12 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-<<<<<<< HEAD
 		E689140F11C420B3001E3409 /* LittleSnoopController.m in Sources */ = {isa = PBXBuildFile; fileRef = E689140E11C420B3001E3409 /* LittleSnoopController.m */; };
 		E689141611C424D5001E3409 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E689141511C424D5001E3409 /* Settings.plist */; };
 		E68914BD11C4B7F6001E3409 /* RedSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E68914BC11C4B7F6001E3409 /* RedSnapper.m */; };
 		E68915B311C4F21B001E3409 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E68915B211C4F21B001E3409 /* Base64.m */; };
 		E68916DE11C693A9001E3409 /* LittleSnoop.icns in Resources */ = {isa = PBXBuildFile; fileRef = E68916DD11C693A9001E3409 /* LittleSnoop.icns */; };
 		E689170211C6ABA1001E3409 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = E689170111C6ABA1001E3409 /* link.png */; };
-=======
-		E6EB233A11C13A1C001DE944 /* ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB233711C13A1C001DE944 /* ScreenShot.m */; };
-		E6EB233B11C13A1C001DE944 /* SnoopOnMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB233911C13A1C001DE944 /* SnoopOnMe.m */; };
-		E6EB236C11C14709001DE944 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB236B11C14709001DE944 /* OpenGL.framework */; };
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +30,6 @@
 		32CA4F630368D1EE00C91783 /* Little Snoop_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Little Snoop_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Little Snoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Snoop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
 		E689140D11C420B3001E3409 /* LittleSnoopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleSnoopController.h; sourceTree = "<group>"; };
 		E689140E11C420B3001E3409 /* LittleSnoopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleSnoopController.m; sourceTree = "<group>"; };
 		E689141511C424D5001E3409 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Settings.plist; sourceTree = "<group>"; };
@@ -46,13 +39,6 @@
 		E68915B211C4F21B001E3409 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		E68916DD11C693A9001E3409 /* LittleSnoop.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = LittleSnoop.icns; sourceTree = "<group>"; };
 		E689170111C6ABA1001E3409 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
-=======
-		E6EB233611C13A1C001DE944 /* ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShot.h; sourceTree = "<group>"; };
-		E6EB233711C13A1C001DE944 /* ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShot.m; sourceTree = "<group>"; };
-		E6EB233811C13A1C001DE944 /* SnoopOnMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnoopOnMe.h; sourceTree = "<group>"; };
-		E6EB233911C13A1C001DE944 /* SnoopOnMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnoopOnMe.m; sourceTree = "<group>"; };
-		E6EB236B11C14709001DE944 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +47,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-<<<<<<< HEAD
-=======
-				E6EB236C11C14709001DE944 /* OpenGL.framework in Frameworks */,
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +56,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				E68914BB11C4B7F6001E3409 /* RedSnapper.h */,
 				E68914BC11C4B7F6001E3409 /* RedSnapper.m */,
 				E68915B111C4F21B001E3409 /* Base64.h */,
 				E68915B211C4F21B001E3409 /* Base64.m */,
-=======
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -96,10 +75,6 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
-				E6EB236B11C14709001DE944 /* OpenGL.framework */,
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -118,23 +93,13 @@
 		29B97314FDCFA39411CA2CEA /* Little Snoop */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
-				E6EB233611C13A1C001DE944 /* ScreenShot.h */,
-				E6EB233711C13A1C001DE944 /* ScreenShot.m */,
-				E6EB233811C13A1C001DE944 /* SnoopOnMe.h */,
-				E6EB233911C13A1C001DE944 /* SnoopOnMe.m */,
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-<<<<<<< HEAD
 				E689140D11C420B3001E3409 /* LittleSnoopController.h */,
 				E689140E11C420B3001E3409 /* LittleSnoopController.m */,
-=======
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			name = "Little Snoop";
 			sourceTree = "<group>";
@@ -151,18 +116,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				E689170111C6ABA1001E3409 /* link.png */,
 				E68916DD11C693A9001E3409 /* LittleSnoop.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				E689141511C424D5001E3409 /* Settings.plist */,
-=======
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -221,12 +180,9 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-<<<<<<< HEAD
 				E689141611C424D5001E3409 /* Settings.plist in Resources */,
 				E68916DE11C693A9001E3409 /* LittleSnoop.icns in Resources */,
 				E689170211C6ABA1001E3409 /* link.png in Resources */,
-=======
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,14 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-<<<<<<< HEAD
 				E689140F11C420B3001E3409 /* LittleSnoopController.m in Sources */,
 				E68914BD11C4B7F6001E3409 /* RedSnapper.m in Sources */,
 				E68915B311C4F21B001E3409 /* Base64.m in Sources */,
-=======
-				E6EB233A11C13A1C001DE944 /* ScreenShot.m in Sources */,
-				E6EB233B11C13A1C001DE944 /* SnoopOnMe.m in Sources */,
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +257,6 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				ARCHS = (
 					"$(NATIVE_ARCH_32_BIT)",
 					"$(NATIVE_ARCH_64_BIT)",
@@ -318,11 +268,6 @@
 				INSTALL_OWNER = MK;
 				PREBINDING = NO;
 				PRODUCT_NAME = "Little Snoop";
-=======
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
->>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
@@ -336,6 +281,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = MK;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
