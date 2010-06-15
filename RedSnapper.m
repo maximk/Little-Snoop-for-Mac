@@ -33,6 +33,7 @@
 		{
 			jsonObjs[jsonObjsCount] = [self makeJsonObj:screenShot];
 			jsonObjsCount++;
+			CGImageRelease(screenShot);
 		}
 	}
 	

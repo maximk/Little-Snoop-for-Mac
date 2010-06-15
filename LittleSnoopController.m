@@ -78,10 +78,8 @@
 		NSTimeInterval secs = 180; // delay before the first capture is 3min
 		[NSTimer scheduledTimerWithTimeInterval:secs
 			target:self selector:@selector(heartBeat:) userInfo:nil repeats:YES];
-		
-		// First Time Window may be shown many times
-		[self.firstTimeWindow setReleasedWhenClosed:YES];
-    }
+	
+	}
     return self;
 }
 
@@ -225,12 +223,12 @@
 	[ws release];
 	[location release];
 
-	[self.firstTimeWindow close];
+	[self.firstTimeWindow orderOut:self];
 }
 
 -(void)remindMeLater:(id)sender
 {
-	[self.firstTimeWindow close];
+	[self.firstTimeWindow orderOut:self];
 }
 
 -(void)goToSnoopOnMe:(id)sender
@@ -250,7 +248,7 @@
 	[ws release];
 	[location release];
 
-	[self.firstTimeWindow close];
+	[self.firstTimeWindow orderOut:self];
 }
 
 -(void)openSettings:(id)sender
@@ -270,7 +268,7 @@
 	[ws release];
 	[location release];
 
-	[self.firstTimeWindow close];
+	[self.firstTimeWindow orderOut:self];
 }
 
 @end
