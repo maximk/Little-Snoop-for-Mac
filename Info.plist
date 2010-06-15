@@ -7,9 +7,15 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
+<<<<<<< HEAD
+	<string>LittleSnoop</string>
+	<key>CFBundleIdentifier</key>
+	<string>LittleSnoop</string>
+=======
 	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.Little Snoop</string>
+>>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +23,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
+<<<<<<< HEAD
+	<string>abba</string>
+=======
 	<string>????</string>
+>>>>>>> 03717e10b4ebc696db02b309d2a515c6578ef3ba
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSMainNibFile</key>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LsId</key>
+	<string />
+	<key>CaptureHost</key>
+	<string>snoopon.me</string>
+	<key>CapturePort</key>
+	<integer>80</integer>
+	<key>CapturePath</key>
+	<string>/captures</string>
+	<key>SettingsPath</key>
+	<string>/settings</string>
+	<key>InstalledPath</key>
+	<string>/installed</string>
+	<key>PortaPath</key>
+	<string>/porta</string>
+</dict>
+</plist>
